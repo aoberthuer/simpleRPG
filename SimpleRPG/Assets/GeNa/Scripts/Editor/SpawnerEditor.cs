@@ -1708,7 +1708,7 @@ namespace GeNa
 
                 if (PrefabUtility.GetPrefabType(go) == PrefabType.PrefabInstance)
                 {
-                    res.m_prefab = PrefabUtility.GetPrefabParent(go) as GameObject;
+                    res.m_prefab = PrefabUtility.GetCorrespondingObjectFromSource(go) as GameObject;
                 }
                 else
                 {

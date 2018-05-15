@@ -4,7 +4,7 @@
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: rock_green_hill_TX_Y
   m_Shader: {fileID: 4800000, guid: d8dc5b44f974a407888d976711c36e82, type: 3}
@@ -36,11 +36,11 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _EmissionMap:
         m_Texture: {fileID: 0}
-        m_Scale: {x: 0.3, y: 0.3}
+        m_Scale: {x: 20, y: 20}
         m_Offset: {x: 1.05, y: 0.57}
     - _MainTex:
         m_Texture: {fileID: 2800000, guid: 03fe6b6ed2c5faf44afa899529e3f23b, type: 3}
-        m_Scale: {x: 0.3, y: 0.3}
+        m_Scale: {x: 20, y: 20}
         m_Offset: {x: 1.05, y: 0.57}
     - _MetallicGlossMap:
         m_Texture: {fileID: 0}

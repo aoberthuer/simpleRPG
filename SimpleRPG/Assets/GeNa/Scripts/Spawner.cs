@@ -2113,7 +2113,7 @@ namespace GeNa
             GameObject[] allGameObjects = UnityEngine.Object.FindObjectsOfType<GameObject>();
             foreach (var go in allGameObjects)
             {
-                prefabParent = PrefabUtility.GetPrefabParent(go) as GameObject;
+                prefabParent = PrefabUtility.GetCorrespondingObjectFromSource(go) as GameObject;
                 if (prefabParent != null)
                 {
                     foreach (var resource in proto.m_resources)
