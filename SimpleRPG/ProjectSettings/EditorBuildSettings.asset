@@ -4,4 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/_SimpleRPG.Scenes/BootScene.unity
+    guid: 162eb4aed00f80e4b93719dc6e3a47f7
+  - enabled: 1
+    path: Assets/_SimpleRPG.Scenes/Scene01.unity
+    guid: 8c24e480a94c1cb4b9dc11e14199d026
+  m_configObjects: {}

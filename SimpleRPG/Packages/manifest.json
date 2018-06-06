@@ -1,4 +1,9 @@
 {
-	"dependencies": {
-	}
+  "dependencies": {
+    "com.unity.progrids": "3.0.2-preview",
+    "com.unity.probuilder": "3.0.8",
+    "com.unity.textmeshpro": "exclude",
+    "com.unity.purchasing": "exclude",
+    "com.unity.ads": "exclude"
+  }
 }
