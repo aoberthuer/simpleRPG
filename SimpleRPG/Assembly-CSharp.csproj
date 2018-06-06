@@ -59,6 +59,21 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\_SimpleRPG.LevelManagement\Scripts\GameManager\GameManager.cs" />
+    <Compile Include="Assets\_SimpleRPG.LevelManagement\Scripts\GameManager\GoalEffect.cs" />
+    <Compile Include="Assets\_SimpleRPG.LevelManagement\Scripts\GameManager\Objective.cs" />
+    <Compile Include="Assets\_SimpleRPG.LevelManagement\Scripts\LevelLoader.cs" />
+    <Compile Include="Assets\_SimpleRPG.LevelManagement\Scripts\Menu.cs" />
+    <Compile Include="Assets\_SimpleRPG.LevelManagement\Scripts\MenuManager.cs" />
+    <Compile Include="Assets\_SimpleRPG.LevelManagement\Scripts\Menus\CreditsScreen.cs" />
+    <Compile Include="Assets\_SimpleRPG.LevelManagement\Scripts\Menus\GameMenu.cs" />
+    <Compile Include="Assets\_SimpleRPG.LevelManagement\Scripts\Menus\MainMenu.cs" />
+    <Compile Include="Assets\_SimpleRPG.LevelManagement\Scripts\Menus\PauseMenu.cs" />
+    <Compile Include="Assets\_SimpleRPG.LevelManagement\Scripts\Menus\SettingsMenu.cs" />
+    <Compile Include="Assets\_SimpleRPG.LevelManagement\Scripts\Menus\WinScreen.cs" />
+    <Compile Include="Assets\_SimpleRPG.LevelManagement\Scripts\SplashScreen.cs" />
+    <Compile Include="Assets\_SimpleRPG.LevelManagement\Scripts\Utilities\DontDestroyOnLoad.cs" />
+    <Compile Include="Assets\_SimpleRPG.LevelManagement\Scripts\Utilities\ScreenFader.cs" />
     <Compile Include="Assets\_SimpleRPG\Scripts\Audio\AudioTrigger.cs" />
     <Compile Include="Assets\_SimpleRPG\Scripts\Camera\CameraFollow.cs" />
     <Compile Include="Assets\_SimpleRPG\Scripts\Camera\CameraFollowSmoothed.cs" />
@@ -88,10 +103,6 @@
     <Compile Include="Assets\_SimpleRPG\Scripts\Weapons\Projectile.cs" />
     <Compile Include="Assets\_SimpleRPG\Scripts\Weapons\WeaponConfig.cs" />
     <Compile Include="Assets\_SimpleRPG\Scripts\Weapons\WeaponPickupPoint.cs" />
-    <Compile Include="Assets\Anim.RPG Character Animation Pack\Code\CameraController.cs" />
-    <Compile Include="Assets\Anim.RPG Character Animation Pack\Code\GUIControls.cs" />
-    <Compile Include="Assets\Anim.RPG Character Animation Pack\Code\IKHands.cs" />
-    <Compile Include="Assets\Anim.RPG Character Animation Pack\Code\RPGCharacterController.cs" />
     <Compile Include="Assets\Anim.RPG Character Animation Pack\Elements\ImageEffects\Scripts\Bloom.cs" />
     <Compile Include="Assets\Anim.RPG Character Animation Pack\Elements\ImageEffects\Scripts\ImageEffectBase.cs" />
     <Compile Include="Assets\Anim.RPG Character Animation Pack\Elements\ImageEffects\Scripts\ImageEffects.cs" />
