@@ -18,7 +18,7 @@ namespace LevelManagement
             }
             else
             {
-                Debug.LogWarning("GAMEMANAGER LoadLevel Error: invalid scene specified!");
+                Debug.LogWarning("LEVELLOADER LoadLevel Error: invalid scene specified!");
             }
         }
 
@@ -41,7 +41,7 @@ namespace LevelManagement
 
         public static void ReloadLevel()
         {
-            LoadLevel(SceneManager.GetActiveScene().name);
+            LoadLevel(SceneManager.GetActiveScene().buildIndex);
         }
 
         public static void LoadNextLevel()
