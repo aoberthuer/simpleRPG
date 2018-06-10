@@ -10,6 +10,8 @@ namespace LevelManagement
 
         [SerializeField] private float playDelay = 0.25f;
 
+        [SerializeField] private TransitionFader startTransitionFaderPrefab;
+
         public void OnPlayPressed()
         {
             StartCoroutine(OnPlayPressedRoutine());
@@ -17,6 +19,8 @@ namespace LevelManagement
 
         private IEnumerator OnPlayPressedRoutine()
         {
+            TransitionFader.PlayTransition(startTransitionFaderPrefab);
+
             LevelLoader.LoadNextLevel();
             yield return new WaitForSeconds(playDelay);
 
