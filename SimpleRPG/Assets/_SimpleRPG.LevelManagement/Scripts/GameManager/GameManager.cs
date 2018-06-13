@@ -9,6 +9,8 @@ namespace SampleGame
     public class GameManager : MonoBehaviour
     {
 
+        [SerializeField] private TransitionFader endTransitionFaderPrefab;
+
         // reference to goal effect
         private GoalEffect _goalEffect;
 
@@ -54,8 +56,22 @@ namespace SampleGame
             {
                 _isGameOver = true;
                 _goalEffect.PlayEffect();
-                WinScreen.Open();
+                StartCoroutine(OnEndLevelRoutine());
             }
+        }
+
+        private IEnumerator OnEndLevelRoutine()
+        {
+            TransitionFader.PlayTransition(endTransitionFaderPrefab);
+
+            float playDelay = 0f;
+            if(endTransitionFaderPrefab != null)
+            {
+                playDelay = endTransitionFaderPrefab.Delay + endTransitionFaderPrefab.FadeOnDuration;
+            }
+            yield return new WaitForSeconds(playDelay);
+
+            WinScreen.Open();
         }
 
 

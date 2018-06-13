@@ -7,9 +7,6 @@ namespace LevelManagement
 {
     public class MainMenu : Menu<MainMenu>
     {
-
-        [SerializeField] private float playDelay = 0.25f;
-
         [SerializeField] private TransitionFader startTransitionFaderPrefab;
 
         public void OnPlayPressed()
@@ -22,14 +19,19 @@ namespace LevelManagement
             TransitionFader.PlayTransition(startTransitionFaderPrefab);
 
             LevelLoader.LoadNextLevel();
+            float playDelay = 0f;
+            if (startTransitionFaderPrefab != null)
+            {
+                playDelay = startTransitionFaderPrefab.Delay + startTransitionFaderPrefab.FadeOnDuration;
+            }
             yield return new WaitForSeconds(playDelay);
+
 
             GameMenu.Open();
         }
 
         public void OnSettingsPressed()
         {
-
             SettingsMenu.Open();
         }
 

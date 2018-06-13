@@ -160,12 +160,12 @@ MonoBehaviour:
   solidAlpha: 1
   clearAlpha: 0
   fadeOnDuration: 0.5
-  fadeOffDuration: 0.3
+  fadeOffDuration: 0.5
   graphicsToFade:
   - {fileID: 114925695876107846}
   - {fileID: 114039475650357948}
   lifetime: 1
-  delay: 0
+  delay: 0.5
 --- !u!114 &114925695876107846
 MonoBehaviour:
   m_ObjectHideFlags: 1
