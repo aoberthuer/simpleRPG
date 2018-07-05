@@ -3,7 +3,7 @@
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
@@ -12,8 +12,7 @@ MonoBehaviour:
   m_Name: AreaOfEffectRemote L1
   m_EditorClassIdentifier: 
   energyCost: 25
-  particlePrefab: {fileID: 1347560723486874, guid: 5172340b6b4220a4892d08410294b3fc,
-    type: 2}
+  particlePrefab: {fileID: 131964, guid: 409db732aa2a79f4faffaa7f46e4b13f, type: 2}
   audioClips:
   - {fileID: 8300000, guid: 02bed9e00fa086041845dc7e3395c336, type: 3}
   abilityAnimationClip: {fileID: 7400000, guid: d300e74cfdd769b438fc1740cae67d57,

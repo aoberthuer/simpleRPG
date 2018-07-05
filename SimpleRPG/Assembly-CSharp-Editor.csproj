@@ -100,6 +100,8 @@
     <Compile Include="Assets\PostProcessing\Editor\Utils\FxStyles.cs" />
     <Compile Include="Assets\PostProcessing\Editor\Utils\ReflectionUtils.cs" />
     <Compile Include="Assets\Unity.Standard Assets\Editor\CrossPlatformInput\CrossPlatformInputInitialize.cs" />
+    <Compile Include="Assets\Water.LowPolyWaterv2\Editor\LPWInspector.cs" />
+    <Compile Include="Assets\Water.LowPolyWaterv2\Editor\LPWShaderGUI.cs" />
     <Reference Include="Unity.ProBuilder.AddOns.Editor">
       <HintPath>E:/Unity/projects/github/SimpleRPG/SimpleRPG/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
     </Reference>
