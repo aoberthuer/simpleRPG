@@ -1,9 +1,7 @@
 ﻿using System.Collections;
-
 using UnityEngine;
-using UnityEngine.Assertions;
-using UnityEngine.SceneManagement;
 
+using RPG.Core;
 using RPG.CameraUI;
 using RPG.Weapons;
 
@@ -15,6 +13,18 @@ namespace RPG.Characters
         private Character character;
         private WeaponSystem weaponSystem;
         private SpecialAbilities specialAbilities;
+
+        private void Awake()
+        {
+            if (GlobalObjectControl.Instance == null)
+                return;
+
+            WeaponConfig weaponConfigLoaded = GlobalObjectControl.Instance.CurrentWeaponConfig;
+            if (weaponConfigLoaded == null)
+                return;
+
+            GetComponent<WeaponSystem>().SetCurrentWeapon(weaponConfigLoaded);
+        }
 
 
         private void Start()

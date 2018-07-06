@@ -1,8 +1,7 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using RPG.Characters;
+﻿using UnityEngine;
+
+using RPG.Core;
+
 
 namespace RPG.Weapons
 {
@@ -55,6 +54,8 @@ namespace RPG.Weapons
             {
                 other.gameObject.GetComponent<WeaponSystem>().PutWeaponInHand(weaponConfig);
                 audioSource.PlayOneShot(pickUpSFX);
+
+                GlobalObjectControl.Instance.CurrentWeaponConfig = weaponConfig;
             }                
         }
     }

@@ -103,6 +103,7 @@
     <Compile Include="Assets\_SimpleRPG\Scripts\Characters\Special Abilities\Self Heal\SelfHealConfig.cs" />
     <Compile Include="Assets\_SimpleRPG\Scripts\Characters\WaypointContainer.cs" />
     <Compile Include="Assets\_SimpleRPG\Scripts\Core\GameConstants.cs" />
+    <Compile Include="Assets\_SimpleRPG\Scripts\Core\GlobalObjectControl.cs" />
     <Compile Include="Assets\_SimpleRPG\Scripts\Weapons\Projectile.cs" />
     <Compile Include="Assets\_SimpleRPG\Scripts\Weapons\WeaponConfig.cs" />
     <Compile Include="Assets\_SimpleRPG\Scripts\Weapons\WeaponPickupPoint.cs" />

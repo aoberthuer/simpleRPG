@@ -178,6 +178,11 @@ namespace RPG.Weapons
             return currentWeaponConfig;
         }
 
+        public void SetCurrentWeapon(WeaponConfig weaponConfig)
+        {
+            currentWeaponConfig = weaponConfig;
+        }
+
         private void SetAttackAnimation()
         {
             if (!character.GetAnimatorOverrideController())
