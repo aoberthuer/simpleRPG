@@ -59,12 +59,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Enviro - Dynamic Enviroment\Scripts\Editor\EnviroInteriorEditor.cs" />
-    <Compile Include="Assets\Enviro - Dynamic Enviroment\Scripts\Editor\EnviroSkyEditor.cs" />
-    <Compile Include="Assets\Enviro - Dynamic Enviroment\Scripts\Editor\EnviroVolumeLightEditor.cs" />
-    <Compile Include="Assets\Enviro - Dynamic Enviroment\Scripts\Editor\EnviroWeatherPresetEditor.cs" />
-    <Compile Include="Assets\Enviro - Dynamic Enviroment\Scripts\Editor\EnviroZoneEditor.cs" />
-    <Compile Include="Assets\Enviro - Dynamic Enviroment\Scripts\WAPI Integration\Editor\EnviroWAPIEditor.cs" />
+    <Compile Include="Assets\Enviro.Dynamic Enviroment\Scripts\Editor\EnviroInteriorEditor.cs" />
+    <Compile Include="Assets\Enviro.Dynamic Enviroment\Scripts\Editor\EnviroSkyEditor.cs" />
+    <Compile Include="Assets\Enviro.Dynamic Enviroment\Scripts\Editor\EnviroVolumeLightEditor.cs" />
+    <Compile Include="Assets\Enviro.Dynamic Enviroment\Scripts\Editor\EnviroWeatherPresetEditor.cs" />
+    <Compile Include="Assets\Enviro.Dynamic Enviroment\Scripts\Editor\EnviroZoneEditor.cs" />
+    <Compile Include="Assets\Enviro.Dynamic Enviroment\Scripts\WAPI Integration\Editor\EnviroWAPIEditor.cs" />
     <Compile Include="Assets\PostProcessing\Editor\Attributes\PostProcessingModelEditorAttribute.cs" />
     <Compile Include="Assets\PostProcessing\Editor\Models\AmbientOcclusionModelEditor.cs" />
     <Compile Include="Assets\PostProcessing\Editor\Models\AntialiasingModelEditor.cs" />
