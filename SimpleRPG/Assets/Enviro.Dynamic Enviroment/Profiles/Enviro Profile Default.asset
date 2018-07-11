@@ -846,7 +846,7 @@ MonoBehaviour:
     flatCloudsNoiseOctaves: 5
     flatCloudsAltitude: 59.9
     flatCloudsMorphingSpeed: 0.2
-    shadowIntensity: 0
+    shadowIntensity: 0.25
     shadowCookieSize: 10000
   weatherSettings:
     useTag: 0
@@ -878,7 +878,7 @@ MonoBehaviour:
     g: 5
     fogDitheringScale: 240
     fogDitheringIntensity: 0.5
-    skyFogIntensity: 1.4319986
+    skyFogIntensity: 1.42
   lightshaftsSettings:
     resolution: 1
     screenBlendMode: 0
@@ -1028,6 +1028,6 @@ MonoBehaviour:
   showComponentsSetup: 0
   showTimeUI: 1
   showWeatherUI: 1
-  showAudioUI: 0
+  showAudioUI: 1
   showEffectsUI: 1
-  modified: 0
+  modified: 1
