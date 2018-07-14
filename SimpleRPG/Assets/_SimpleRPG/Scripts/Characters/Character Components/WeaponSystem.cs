@@ -27,7 +27,7 @@ namespace RPG.Weapons
             animator = GetComponent<Animator>();
 
             PutWeaponInHand(currentWeaponConfig);
-            SetAttackAnimation();
+            SetAttackAnimation(0); // start up with animation clip zero
         }
 
         void Update()
@@ -93,25 +93,29 @@ namespace RPG.Weapons
 
             while (attackerStillAlive && targetStillAlive)
             {
-                AnimationClip animationClip = currentWeaponConfig.GetAttackAnimation();
+
+                AnimationClip[] animationClips = currentWeaponConfig.GetAttackAnimations();
+                int animationClipSelectedIndex = Random.Range(0, animationClips.Length);
+                AnimationClip animationClip = animationClips[animationClipSelectedIndex];
+
                 float animationClipTime = animationClip.length / character.GetAnimSpeedMultiplier();
                 float timeToWait = animationClipTime + currentWeaponConfig.GetTimeBetweenAnimationCycles();
 
                 bool isTimeToHitAgain = Time.time - lastHitTime > timeToWait;
                 if (isTimeToHitAgain)
                 {
-                    AttackTargetOnce();
+                    AttackTargetOnce(animationClipSelectedIndex);
                     lastHitTime = Time.time;
                 }
                 yield return new WaitForSeconds(timeToWait);
             }
         }
 
-        private void AttackTargetOnce()
+        private void AttackTargetOnce(int animationClipSelectedIndex)
         {
             transform.LookAt(target.transform);
             animator.SetTrigger(GameConstants.ANIM_TRIGGER_ATTACK);
-            SetAttackAnimation();
+            SetAttackAnimation(animationClipSelectedIndex);
 
             if(currentWeaponConfig.GetRangedAttack())
             {
@@ -183,7 +187,7 @@ namespace RPG.Weapons
             currentWeaponConfig = weaponConfig;
         }
 
-        private void SetAttackAnimation()
+        private void SetAttackAnimation(int animationClipSelectedIndex)
         {
             if (!character.GetAnimatorOverrideController())
             {
@@ -195,7 +199,8 @@ namespace RPG.Weapons
                 AnimatorOverrideController animatorOverrideController = character.GetAnimatorOverrideController();
                 animator.runtimeAnimatorController = animatorOverrideController;
 
-                animatorOverrideController[GameConstants.DEFAULT_ATTACK] = currentWeaponConfig.GetAttackAnimation();
+                AnimationClip[] animationClipSelected = currentWeaponConfig.GetAttackAnimations();
+                animatorOverrideController[GameConstants.DEFAULT_ATTACK] = animationClipSelected[animationClipSelectedIndex];
             }
         }
 

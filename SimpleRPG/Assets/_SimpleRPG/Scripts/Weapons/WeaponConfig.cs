@@ -9,7 +9,7 @@ namespace RPG.Weapons
         public Transform gripTransform;
 
         [SerializeField] GameObject weaponPrefab;
-        [SerializeField] AnimationClip attackAnimation;
+        [SerializeField] AnimationClip[] attackAnimations;
 
         [SerializeField] float timeBetweenAnimationCycles = .5f;
         [SerializeField] float maxAttackRange = 2f;
@@ -24,10 +24,10 @@ namespace RPG.Weapons
             return weaponPrefab;
         }
 
-        public AnimationClip GetAttackAnimation()
+        public AnimationClip[] GetAttackAnimations()
         {
             RemoveAnimationEvents();
-            return attackAnimation;
+            return attackAnimations;
         }
 
         public float GetTimeBetweenAnimationCycles()
@@ -63,7 +63,10 @@ namespace RPG.Weapons
         // Method removes all animation events so they cannot break existing code.
         private void RemoveAnimationEvents()
         {
-            attackAnimation.events = new AnimationEvent[0];
+            foreach(AnimationClip attackAnimation in attackAnimations)
+            {
+                attackAnimation.events = new AnimationEvent[0];
+            }
         }
     }
 }

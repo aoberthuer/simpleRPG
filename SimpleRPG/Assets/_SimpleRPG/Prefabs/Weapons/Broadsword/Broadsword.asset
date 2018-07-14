@@ -14,7 +14,11 @@ MonoBehaviour:
   gripTransform: {fileID: 4585368972908900, guid: 2b646f0d43084924793a93dd96a2126e,
     type: 2}
   weaponPrefab: {fileID: 131468, guid: f61def225eac3e247985f6679965a655, type: 2}
-  attackAnimation: {fileID: 7400000, guid: 018ce46eeecfeae4abb8016f2c6841ca, type: 3}
+  attackAnimations:
+  - {fileID: 7400000, guid: dce280ced5e006c4cb0eb0fab2f51b75, type: 3}
+  - {fileID: 7400000, guid: 7b5b17e2d42e0424f9c36012595dc9b6, type: 3}
+  - {fileID: 7400000, guid: 018ce46eeecfeae4abb8016f2c6841ca, type: 3}
+  - {fileID: 7400000, guid: cdd2643e8053d5b419629acf98510a71, type: 3}
   timeBetweenAnimationCycles: 0.5
   maxAttackRange: 4
   additionalDamage: 20

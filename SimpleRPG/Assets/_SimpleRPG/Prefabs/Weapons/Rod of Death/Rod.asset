@@ -3,7 +3,7 @@
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
@@ -15,7 +15,11 @@ MonoBehaviour:
     type: 2}
   weaponPrefab: {fileID: 1423653452084890, guid: cdc61a254e715d34ba0f4bb65bd8da7e,
     type: 2}
-  attackAnimation: {fileID: 7400000, guid: 4496e3e9b4c7231499b46f4e5d36d430, type: 3}
+  attackAnimations:
+  - {fileID: 7400000, guid: fcd5d479f75a6b44595e56fa981bdda4, type: 3}
+  - {fileID: 7400000, guid: f0f38438b1a0602489d98f902699342b, type: 3}
+  - {fileID: 7400000, guid: f7d404696aab6a44f814961d95b1230f, type: 3}
+  - {fileID: 7400000, guid: 4496e3e9b4c7231499b46f4e5d36d430, type: 3}
   timeBetweenAnimationCycles: 0.5
   maxAttackRange: 2
   additionalDamage: 2
