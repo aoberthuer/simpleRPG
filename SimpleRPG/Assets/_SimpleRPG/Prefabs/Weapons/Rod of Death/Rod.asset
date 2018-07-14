@@ -20,7 +20,8 @@ MonoBehaviour:
   - {fileID: 7400000, guid: f0f38438b1a0602489d98f902699342b, type: 3}
   - {fileID: 7400000, guid: f7d404696aab6a44f814961d95b1230f, type: 3}
   - {fileID: 7400000, guid: 4496e3e9b4c7231499b46f4e5d36d430, type: 3}
-  timeBetweenAnimationCycles: 0.5
+  timeBetweenAnimationCyclesMin: 0.5
+  timeBetweenAnimationCyclesMax: 0.1
   maxAttackRange: 2
   additionalDamage: 2
   damageDelay: 0.5
