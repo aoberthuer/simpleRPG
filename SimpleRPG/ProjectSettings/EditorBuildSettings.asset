@@ -15,7 +15,7 @@ EditorBuildSettings:
     path: Assets/_SimpleRPG.Scenes/02.TheVillage.unity
     guid: 9c1471859244002488846246ba72f4d7
   - enabled: 1
-    path: Assets/_SimpleRPG.Scenes/03.Scene01.unity
+    path: Assets/_SimpleRPG.Scenes/03.The Woods.unity
     guid: 8c24e480a94c1cb4b9dc11e14199d026
   - enabled: 1
     path: Assets/_SimpleRPG.Scenes/04.Scene02.unity
